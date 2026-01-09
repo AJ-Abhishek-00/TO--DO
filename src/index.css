@@ -1,0 +1,183 @@
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg: #f4f7ff;
+  --card: #ffffff;
+  --text: #1f2937;
+  --primary: #6366f1;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --border: #e5e7eb;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f8fafc;
+  --primary: #818cf8;
+  --success: #4ade80;
+  --danger: #f87171;
+  --border: #334155;
+}
+
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  transition: 0.3s;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  color: var(--text);
+}
+
+/* ===== INPUT ===== */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+.input-box button {
+  background: var(--primary);
+  color: white;
+  padding: 14px 20px;
+}
+
+/* ===== TASK CARD ===== */
+.task-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.status.Ongoing { color: var(--primary); }
+.status.Completed { color: var(--success); }
+.status.Dropped { color: var(--danger); }
+
+/* ===== BUTTON GROUP ===== */
+.buttons button {
+  margin-right: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 12px;
+}
+
+/* ===== PROGRESS ===== */
+.progress {
+  margin-top: 12px;
+}
+
+.progress span {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.reset-btn {
+  margin-left: 12px;
+  padding: 4px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* ===== DUE ===== */
+.due-buttons {
+  margin-top: 10px;
+}
+
+.due-buttons button {
+  margin-right: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.due-buttons button.active {
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+/* ===== DELETE ===== */
+.delete-btn {
+  margin-top: 14px;
+  width: 100%;
+  background: var(--danger);
+  color: white;
+  padding: 10px;
+}
+/* ===== VIDEO BACKGROUND ===== */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Dark overlay for readability */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+/* Keep app above background */
+.container {
+  position: relative;
+  z-index: 1;
+}

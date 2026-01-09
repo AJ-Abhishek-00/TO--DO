@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4ff;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.task-card {
+  background: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.btn-group button {
+  margin-right: 5px;
+}
+
+.rating span {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.email-btn {
+  margin-top: 10px;
+  background: #4f46e5;
+  color: white;
+}
