@@ -1,16 +1,62 @@
-# React + Vite
+# Study Todo Tracker 🧠📘
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **study-focused task management application** built with **React + Vite** to help students plan, track, and complete their daily learning goals effectively.
 
-Currently, two official plugins are available:
+This project was designed with a **real student workflow in mind** — tracking progress, managing deadlines, and staying focused without clutter.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📝 Add & manage study tasks
+- 🔄 Task status tracking:
+  - Yet To Start
+  - Ongoing
+  - Completed
+  - Dropped
+- ⭐ Progress tracking (1–5 stars)
+- 🔁 Reset progress anytime
+- 🗓 Due date selection (Today / Tomorrow) with highlight
+- 🌓 Light & Dark mode toggle
+- 🎥 Animated video background for an aesthetic experience
+- 🗑 Delete tasks instantly
+- 📱 Fully responsive UI
+- ⚡ Built with Vite for fast performance
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **React (Hooks)**
+- **Vite**
+- **JavaScript (ES6+)**
+- **CSS with custom themes**
+- **react-icons**
+- **Vercel** (Deployment)
+
+---
+
+## 📸 UI Concept
+
+The app focuses on:
+- Minimal distractions
+- Clean typography
+- Visual progress feedback
+- Smooth transitions
+
+This makes it ideal for **daily study planning**, **exam preparation**, and **self-paced learning**.
+
+---
+
+## 🚀 Live Demo
+
+👉 Deployed using **Vercel**  
+(Add your live URL here after deployment)
+
+---
+
+## 🧪 Local Setup
+
+```bash
+npm install
+npm run dev
